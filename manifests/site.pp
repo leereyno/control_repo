@@ -21,7 +21,7 @@ node default {
 
   yum::group { 'additional-devel':
     ensure  => present,
-    timeout => 300,
+    timeout => 600,
   }
 
 
