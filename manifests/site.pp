@@ -6,6 +6,8 @@ node default {
   #    owner   => 'root',
   #  }
 
-
+  package { 'gcc.x86_64':
+    ensure => present,
+  }
 }
 
