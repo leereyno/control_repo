@@ -10,7 +10,7 @@ node default {
     ensure => present,
   }
 
-  yum::group { 'development':
+  yum::group { 'development','additional-devel':
     ensure  => present,
     timeout => 300,
   }
