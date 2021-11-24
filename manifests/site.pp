@@ -9,6 +9,8 @@ node default {
   # Yum stuff
   # https://forge.puppet.com/modules/puppet/yum
 
+  mod 'puppet-yum', '5.3.0'
+
   # Only allow two kernel releases on the system at any given time
   yum::config { 'installonly_limit':
     ensure => 2,
