@@ -1,6 +1,10 @@
-class minecraft {
-  $url = 'http://192.168.1.10/minecraft/server.jar'
+class minecraft 
+(
+  $url = 'http://192.168.1.10/minecraft/server.jar',
   $install_dir = '/opt/minecraft'
+)
+
+{
 
   file { $install_dir:
     ensure => directory,
