@@ -7,7 +7,7 @@ class minecraft {
   file {'/opt/minecraft/server.jar':
     ensure => file,
     source => 'http://192.168.1.10/minecraft/server.jar',
-    before Service['minecraft'],
+    before => Service['minecraft'],
   }
 
   file {'/etc/yum.repos.d/epel.repo':
